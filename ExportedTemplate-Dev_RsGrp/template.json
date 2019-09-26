@@ -61,7 +61,7 @@
                 "displayName": "FileStorage",
                 "customParameterValues": {},
                 "api": {
-                    "id": "[concat('subscriptions/', subscription().subscriptionId,'/providers/Microsoft.Web/locations/',centralus/managedApis/', parameters('connections_azurefile_name'))]"
+                    "id": "[concat('/subscriptions/',subscription().id,'/providers/Microsoft.Web/locations/centralus/managedApis/', parameters('connections_azurefile_name'))]"
                 }
             }
         },
