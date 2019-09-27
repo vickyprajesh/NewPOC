@@ -2,10 +2,19 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "sites_DemoAppDev_name": {
+            "value": null
+        },
         "connections_azurefile_name": {
             "value": null
         },
         "workflows_FileToFile_name": {
+            "value": null
+        },
+        "serverfarms_CentralUSPlan_name": {
+            "value": null
+        },
+        "components_DemoAppDev_name": {
             "value": null
         },
         "storageAccounts_devfilestrg_name": {

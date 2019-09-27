@@ -80,7 +80,7 @@ Write-Host "Selecting subscription '$Subscription'";
 Select-AzSubscription -Subscription $Subscription;
 
 # Register RPs
-$resourceProviders = @("microsoft.storage","microsoft.web","microsoft.logic");
+$resourceProviders = @("microsoft.insights","microsoft.storage","microsoft.web","microsoft.logic");
 if($resourceProviders.length) {
     Write-Host "Registering resource providers"
     foreach($resourceProvider in $resourceProviders) {
