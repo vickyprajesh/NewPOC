@@ -18,10 +18,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: AzureFunctionApp@1
+- task: DotNetCoreCLI@2
   inputs:
-    azureSubscription: 'Free Trial (cf1821d1-43e3-4e82-ab69-91f31473e941)'
-    appType: 'functionApp'
-    appName: 'DemoAppDev'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
+    command: 'build'
